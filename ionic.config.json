@@ -1,0 +1,7 @@
+{
+  "name": "CasaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

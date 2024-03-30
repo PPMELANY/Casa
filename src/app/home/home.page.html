@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tiempo Real
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>         
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="dormitorio()" expand="block" [color]="ledColorDormitorio ? 'warning' : 'medium'">
+          {{ ledColorDormitorio ? '' : '' }} 
+          <img src="https://i.pinimg.com/236x/b4/e6/a4/b4e6a48085fd9ee808ec8609c32daf60.jpg">
+          Dormitorio 
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="cocina()" expand="block" [color]="ledColorCocina ? 'warning' : 'medium'">
+          {{ ledColorCocina ? '' : '' }} 
+          <img src="https://i.pinimg.com/564x/81/8d/33/818d333776e173235bbadfdb876ebe1d.jpg">
+          Cocina
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="bamo()" expand="block" [color]="ledColorBamo ? 'warning' : 'medium'">
+            {{ ledColorBamo ? '' : '' }} 
+            <img src="https://i.pinimg.com/564x/3c/14/26/3c142650d8e79df61ad601b18c1b2d84.jpg">
+            Baño
+        </ion-button>
+    </ion-col>
+    
+
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="sala()" expand="block" [color]="ledColorSala ? 'warning' : 'medium'">
+          {{ ledColorSala ? '' : '' }} 
+          <img src="https://i.pinimg.com/564x/fc/fa/3e/fcfa3e8fb09ec624a65c8284c9634e8b.jpg">
+          Sala
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="atico()" expand="block" [color]="ledColorAtico ? 'warning' : 'medium'">
+          {{ ledColorAtico ? '' : '' }} 
+          <img src="https://i.pinimg.com/236x/a0/b1/ef/a0b1ef28172c6dc2a8ed539261f58906.jpg">
+          Atico
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="6" size-md="4" size-lg="2">
+        <ion-button (click)="lavanderia()" expand="block" [color]="ledColorlavanderia ? 'warning' : 'medium'">
+          {{ ledColorlavanderia ? '' : '' }} 
+          <img src="https://i.pinimg.com/564x/85/61/6b/85616ba95cbab622dfb629e3a014bea0.jpg">
+          lavanderia
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
